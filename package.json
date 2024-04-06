@@ -1,6 +1,9 @@
 {
   "name": "shadylight",
-  "browserslist": ["last 2 version", "not dead"],
+  "browserslist": [
+    "last 2 version",
+    "not dead"
+  ],
   "description": "Building your next Project with modern stack of technologies and shadcn future design system! Astro starter template",
   "keywords": [
     "Web Development",
@@ -22,6 +25,7 @@
     "svelte-headless-table": "^0.18.2"
   },
   "peerDependencies": {
+    "sharp": "^0.33.3",
     "typescript": "^5.0.0"
   },
   "version": "1.0.0",
@@ -49,7 +53,6 @@
     "@types/node": "^20.12.5",
     "@types/react": "^18.2.74",
     "@types/react-dom": "^18.2.24",
-    "@types/sharp": "^0.32.0",
     "astro": "^4.5.16",
     "astro-expressive-code": "^0.33.5",
     "autoprefixer": "^10.4.19",

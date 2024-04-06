@@ -21,6 +21,12 @@ export default defineConfig({
     }]]
   },
   vite: {
+    build: {
+      rollupOptions: {
+        external: [
+          "sharp"
+        ]
+      },
     plugins: [million.vite({
       mode: 'react',
       server: true,
