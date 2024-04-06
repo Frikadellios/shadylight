@@ -13,7 +13,14 @@ import vercel from "@astrojs/vercel/static";
 export default defineConfig({
   site: 'https://shadylights.vercel.app',
   output: "static",
-  adapter: vercel(),
+  adapter: vercel({
+    imageService: true,
+  }),
+  image: {
+    service: {
+      entrypoint: 'astro/assets/services/noop'
+    }
+  },
   markdown: {
     rehypePlugins: [rehypeHeadingIds, [rehypeAutolinkHeadings, {
       // Wrap the heading text in a link.

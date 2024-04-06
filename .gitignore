@@ -8,6 +8,8 @@ dist/
 .astro/
 .env
 
+.vercel
+
 # dependencies
 node_modules/
 

@@ -22,10 +22,12 @@
     "@biomejs/biome": "1.6.4",
     "@types/bun": "latest",
     "svelte-adapter-bun": "^0.5.2",
-    "svelte-headless-table": "^0.18.2"
+    "svelte-headless-table": "^0.18.2",
+    "@types/node": "^20.12.5",
+    "@types/react": "^18.2.74",
+    "@types/react-dom": "^18.2.24"
   },
   "peerDependencies": {
-    "sharp": "^0.33.3",
     "typescript": "^5.0.0"
   },
   "version": "1.0.0",
@@ -48,11 +50,7 @@
     "@fontsource/inter": "^5.0.17",
     "@fontsource/manrope": "^5.0.19",
     "@internationalized/date": "^3.5.2",
-    "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@tailwindcss/typography": "^0.5.12",
-    "@types/node": "^20.12.5",
-    "@types/react": "^18.2.74",
-    "@types/react-dom": "^18.2.24",
     "astro": "^4.5.16",
     "astro-expressive-code": "^0.33.5",
     "autoprefixer": "^10.4.19",

@@ -2,4 +2,7 @@
 auto = "auto"
 peer = true
 
+[install.lockfile]
+print = "yarn"
+
 telemetry = false
