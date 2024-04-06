@@ -1,0 +1,91 @@
+{
+  "name": "shadylight",
+  "browserslist": ["last 2 version", "not dead"],
+  "description": "Building your next Project with modern stack of technologies and shadcn future design system! Astro starter template",
+  "keywords": [
+    "Web Development",
+    "Front-end Frameworks",
+    "JavaScript",
+    "Web Design",
+    "Website Optimization",
+    "SEO",
+    "Cloud Hosting",
+    "Git Management",
+    "Multi-language Support",
+    "User Experience"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "svelte-headless-table": "^0.18.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "version": "1.0.0",
+  "repository": "git+https://github.com/Frikadellios/shadylight.git",
+  "author": "Hrihorii Ilin <devopsick@pm.me>",
+  "license": "MIT",
+  "dependencies": {
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/react": "^3.1.1",
+    "@astrojs/starlight": "^0.21.4",
+    "@astrojs/svelte": "^5.3.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/ts-plugin": "^1.6.1",
+    "@expressive-code/plugin-collapsible-sections": "^0.33.5",
+    "@expressive-code/plugin-line-numbers": "^0.33.5",
+    "@internationalized/date": "^3.5.2",
+    "@tailwindcss/typography": "^0.5.12",
+    "@types/node": "^20.12.5",
+    "@types/react": "^18.2.74",
+    "@types/react-dom": "^18.2.24",
+    "@types/sharp": "^0.32.0",
+    "astro": "^4.5.16",
+    "astro-expressive-code": "^0.33.5",
+    "autoprefixer": "^10.4.19",
+    "bits-ui": "^0.21.2",
+    "bun-types": "^1.0.36",
+    "clsx": "^2.1.0",
+    "cmdk-sv": "^0.0.17",
+    "embla-carousel-svelte": "^8.0.1",
+    "lucide-svelte": "^0.365.0",
+    "mdast-util-from-markdown": "^2.0.0",
+    "mdast-util-to-markdown": "^2.1.0",
+    "mdast-util-to-string": "^4.0.0",
+    "mode-watcher": "^0.3.0",
+    "paneforge": "^0.0.3",
+    "postcss": "^8.4.38",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sharp": "^0.33.3",
+    "svelte-radix": "^1.1.0",
+    "tailwind-merge": "^2.2.2",
+    "tailwind-variants": "^0.2.1",
+    "tailwindcss": "^3.4.3",
+    "tailwindcss-animate": "^1.0.7",
+    "tsm": "^2.3.0",
+    "typescript": "^5.4.4",
+    "undici-types": "^6.11.1",
+    "unist-util-visit": "^5.0.0",
+    "vaul-svelte": "^0.3.0",
+    "vite": "^5.2.8"
+  },
+  "overrides": {
+    "astro-expressive-code": "latest"
+  },
+  "scripts": {
+    "dev": "bunx --bun astro dev --verbose",
+    "start": "bun astro check && bunx --bun astro dev --verbose",
+    "build": "bunx --bun astro build",
+    "builder": "bun astro check --verbose && bunx --bun astro build --verbose",
+    "preview": "bunx --bun astro preview",
+    "updater": "bun update --force && bunx @astrojs/upgrade && bun upgrade --canary",
+    "biomes": "bunx @biomejs/biome check --apply .",
+    "astro": "astro"
+  },
+  "bugs": {
+    "url": "https://github.com/Frikadellios/shadylight/issues"
+  },
+  "homepage": "https://github.com/Frikadellios/shadylight#readme"
+}
