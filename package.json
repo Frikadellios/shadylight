@@ -16,6 +16,7 @@
   ],
   "type": "module",
   "devDependencies": {
+    "@biomejs/biome": "1.6.4",
     "@types/bun": "latest",
     "svelte-adapter-bun": "^0.5.2",
     "svelte-headless-table": "^0.18.2"
