@@ -26,7 +26,8 @@ export default defineConfig({
         external: [
           "sharp"
         ]
-      },
+      }
+    },
     plugins: [million.vite({
       mode: 'react',
       server: true,
