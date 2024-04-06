@@ -1,0 +1,13 @@
+---
+import '../styles/shadcnui/svelte.css';
+import Layout from "@/layouts/Layout.astro";
+import ExampleDashbord from "@/lib/blocks/example-dashbord.svelte";
+import DasbordSeven from '@/lib/blocks/dasbord-seven.svelte';
+import Typography from '../components/Typographies.astro';
+---
+
+<Layout title="Orang Svelte Shadcn UI Page">
+    <ExampleDashbord client:load />
+    <Typography />
+    <DasbordSeven client:load />
+</Layout>

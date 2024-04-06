@@ -1,0 +1,6 @@
+.astro/
+node_modules/
+package-lock.json
+dist/
+bun.lockb
+yarn.lock
