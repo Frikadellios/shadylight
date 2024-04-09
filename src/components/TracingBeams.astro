@@ -1,0 +1,71 @@
+---
+
+// Corrected import paths based on lint errors
+// Removed import { calsans } from "@/fonts/calsans"; as it cannot find the module
+import { Image } from 'astro:assets'
+import { twMerge } from 'tailwind-merge'
+import { TracingBeam } from './ui/tracing-beam'
+
+export interface Props {
+  title: string
+  description: string
+  badge: string
+  image: ImageMetadata
+}
+
+const Content = [
+  {
+    title: 'Lorem Ipsum Dolor Sit Amet',
+    description:
+      'deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea',
+    badge: 'Svelte',
+    image: '@/assets/background.png',
+  },
+  {
+    title: 'Lorem Ipsum Dolor Sit Amet',
+    description:
+      'deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea',
+    badge: 'Changelog',
+    image: '@/assets/background.png',
+  },
+  {
+    title: 'Lorem Ipsum Dolor Sit Amet',
+    description:
+      'deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea',
+    badge: 'Launch Week',
+    image: '@/assets/background.png',
+  },
+]
+---
+
+    <TracingBeam className="px-6" client:load >
+      <div class="max-w-2xl mx-auto antialiased pt-4 relative">
+        {Content.map((item, index) => (
+          <Fragment key={`content-${index}`}>
+            <div class="mb-10">
+              <h2 class="bg-background text-foreground rounded-full text-sm w-fit px-4 py-1 mb-4">
+                {item.badge}
+              </h2>
+            </div>
+            <p class={twMerge("text-xl mb-4")}>
+              {item.title}
+            </p>
+
+            <div class="text-sm prose prose-sm dark:prose-invert">
+              {item?.image && (
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  height="1000"
+                  width="1000"
+                  class="rounded-lg mb-10 object-cover"
+                />
+              )}
+              {item.description}
+            </div>
+          </div>
+        ))}
+      </div>
+    </TracingBeam>
+
+

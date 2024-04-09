@@ -1,4 +1,9 @@
 import { fontFamily } from 'tailwindcss/defaultTheme'
+const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
+const {
+  default: flattenColorPalette,
+} = require('tailwindcss/lib/util/flattenColorPalette')
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -62,7 +67,21 @@ const config = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography'), require('tailwindcss-animate')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('tailwindcss-animate'),
+    addVariablesForColors,
+  ],
+}
+function addVariablesForColors({ addBase, theme }) {
+  const allColors = flattenColorPalette(theme('colors'))
+  const newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
+  )
+
+  addBase({
+    ':root': newVars,
+  })
 }
 
 export default config
